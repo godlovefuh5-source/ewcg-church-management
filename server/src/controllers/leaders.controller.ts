@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { LeaderService } from '../services/leader.service';
 import { Leader } from '../types/api';
+import { handleError } from '../utils/errorHandler';
 
 export class LeaderController {
     private leaderService: LeaderService;
@@ -11,10 +12,11 @@ export class LeaderController {
 
     public async getAllLeaders(req: Request, res: Response): Promise<void> {
         try {
-            const leaders: Leader[] = await this.leaderService.getAllLeaders();
+            const leaders: Leader[] = await this.leaderService.getLeaders();
             res.status(200).json({ success: true, data: leaders });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to fetch leaders', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to fetch leaders', errors: [message] });
         }
     }
 
@@ -28,7 +30,8 @@ export class LeaderController {
             }
             res.status(200).json({ success: true, data: leader });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to fetch leader', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to fetch leader', errors: [message] });
         }
     }
 
@@ -38,7 +41,8 @@ export class LeaderController {
             const newLeader: Leader = await this.leaderService.createLeader(leaderData);
             res.status(201).json({ success: true, data: newLeader });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to create leader', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to create leader', errors: [message] });
         }
     }
 
@@ -53,7 +57,8 @@ export class LeaderController {
             }
             res.status(200).json({ success: true, data: updatedLeader });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to update leader', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to update leader', errors: [message] });
         }
     }
 
@@ -67,7 +72,8 @@ export class LeaderController {
             }
             res.status(204).json({ success: true, message: 'Leader deleted successfully' });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to delete leader', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to delete leader', errors: [message] });
         }
     }
 }

@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { EventService } from '../services/event.service';
 import { Event } from '../types/api';
+import { handleError } from '../utils/errorHandler';
 
 export class EventController {
     private eventService: EventService;
@@ -14,7 +15,8 @@ export class EventController {
             const events: Event[] = await this.eventService.getAllEvents();
             res.status(200).json({ success: true, data: events });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to retrieve events', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to retrieve events', errors: [message] });
         }
     }
 
@@ -28,7 +30,8 @@ export class EventController {
             }
             res.status(200).json({ success: true, data: event });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to retrieve event', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to retrieve event', errors: [message] });
         }
     }
 
@@ -38,7 +41,8 @@ export class EventController {
             const createdEvent: Event = await this.eventService.createEvent(newEvent);
             res.status(201).json({ success: true, data: createdEvent });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to create event', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to create event', errors: [message] });
         }
     }
 
@@ -53,7 +57,8 @@ export class EventController {
             }
             res.status(200).json({ success: true, data: event });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to update event', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to update event', errors: [message] });
         }
     }
 
@@ -67,7 +72,8 @@ export class EventController {
             }
             res.status(204).json({ success: true, message: 'Event deleted successfully' });
         } catch (error) {
-            res.status(500).json({ success: false, message: 'Unable to delete event', errors: [error.message] });
+            const { message, status } = handleError(error);
+            res.status(status).json({ success: false, message: 'Unable to delete event', errors: [message] });
         }
     }
 }

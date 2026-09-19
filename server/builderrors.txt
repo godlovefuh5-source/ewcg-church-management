@@ -1,0 +1,173 @@
+﻿
+> ewcg-church-management@1.0.0 build
+> tsc
+
+src/controllers/admin.controller.ts(17,22): error TS18046: 'error' is of type 'unknown'.
+src/controllers/admin.controller.ts(33,22): error TS18046: 'error' is of type 'unknown'.
+src/controllers/admin.controller.ts(57,22): error TS18046: 'error' is of type 'unknown'.
+src/controllers/admin.controller.ts(76,22): error TS18046: 'error' is of type 'unknown'.
+src/controllers/admin.controller.ts(93,22): error TS18046: 'error' is of type 'unknown'.
+src/controllers/auth.controller.ts(2,10): error TS2614: Module '"../services/auth.service"' has no exported member 'AuthService'. Did you mean to use 'import AuthService from "../services/auth.service"' instead?
+src/controllers/auth.controller.ts(4,10): error TS2305: Module '"../validators/auth.validator"' has no exported member 'validateLogin'.
+src/controllers/auth.controller.ts(4,25): error TS2305: Module '"../validators/auth.validator"' has no exported member 'validateRegister'.
+src/controllers/auth.controller.ts(25,61): error TS18046: 'err' is of type 'unknown'.
+src/controllers/auth.controller.ts(41,61): error TS18046: 'err' is of type 'unknown'.
+src/controllers/auth.controller.ts(51,26): error TS2339: Property 'user' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+src/controllers/contact.controller.ts(2,10): error TS2305: Module '"../services/contact.service"' has no exported member 'ContactService'.
+src/controllers/contact.controller.ts(24,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/contact.controller.ts(40,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/dashboard.controller.ts(2,10): error TS2614: Module '"../services/dashboard.service"' has no exported member 'DashboardService'. Did you mean to use 'import DashboardService from "../services/dashboard.service"' instead?
+src/controllers/dashboard.controller.ts(17,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/donations.controller.ts(2,10): error TS2724: '"../services/donation.service"' has no exported member named 'DonationService'. Did you mean 'donationService'?
+src/controllers/donations.controller.ts(3,10): error TS2305: Module '"../types/api"' has no exported member 'Donation'.
+src/controllers/donations.controller.ts(25,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/donations.controller.ts(41,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/donations.controller.ts(64,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/donations.controller.ts(89,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/donations.controller.ts(112,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/events.controller.ts(2,10): error TS2724: '"../services/event.service"' has no exported member named 'EventService'. Did you mean 'eventService'?
+src/controllers/events.controller.ts(17,99): error TS18046: 'error' is of type 'unknown'.
+src/controllers/events.controller.ts(31,98): error TS18046: 'error' is of type 'unknown'.
+src/controllers/events.controller.ts(41,96): error TS18046: 'error' is of type 'unknown'.
+src/controllers/events.controller.ts(56,96): error TS18046: 'error' is of type 'unknown'.
+src/controllers/events.controller.ts(70,96): error TS18046: 'error' is of type 'unknown'.
+src/controllers/gallery.controller.ts(22,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/gallery.controller.ts(29,53): error TS2339: Property 'uploadImage' does not exist on type 'GalleryService'.
+src/controllers/gallery.controller.ts(38,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/gallery.controller.ts(52,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/leaders.controller.ts(3,10): error TS2305: Module '"../types/api"' has no exported member 'Leader'.
+src/controllers/leaders.controller.ts(14,64): error TS2551: Property 'getAllLeaders' does not exist on type 'LeaderService'. Did you mean 'getLeaders'?
+src/controllers/leaders.controller.ts(17,97): error TS18046: 'error' is of type 'unknown'.
+src/controllers/leaders.controller.ts(31,96): error TS18046: 'error' is of type 'unknown'.
+src/controllers/leaders.controller.ts(41,97): error TS18046: 'error' is of type 'unknown'.
+src/controllers/leaders.controller.ts(56,97): error TS18046: 'error' is of type 'unknown'.
+src/controllers/leaders.controller.ts(70,97): error TS18046: 'error' is of type 'unknown'.
+src/controllers/liveStream.controller.ts(7,54): error TS2339: Property 'getSettings' does not exist on type 'typeof LiveStreamService'.
+src/controllers/liveStream.controller.ts(16,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/liveStream.controller.ts(23,61): error TS2339: Property 'updateSettings' does not exist on type 'typeof LiveStreamService'.
+src/controllers/liveStream.controller.ts(33,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/liveStream.controller.ts(40,56): error TS2339: Property 'startStream' does not exist on type 'typeof LiveStreamService'.
+src/controllers/liveStream.controller.ts(50,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/liveStream.controller.ts(57,37): error TS2339: Property 'stopStream' does not exist on type 'typeof LiveStreamService'.
+src/controllers/liveStream.controller.ts(66,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/ministries.controller.ts(17,110): error TS18046: 'error' is of type 'unknown'.
+src/controllers/ministries.controller.ts(30,108): error TS18046: 'error' is of type 'unknown'.
+src/controllers/ministries.controller.ts(40,106): error TS18046: 'error' is of type 'unknown'.
+src/controllers/ministries.controller.ts(54,106): error TS18046: 'error' is of type 'unknown'.
+src/controllers/ministries.controller.ts(61,19): error TS2322: Type 'void' is not assignable to type 'boolean'.
+src/controllers/ministries.controller.ts(67,106): error TS18046: 'error' is of type 'unknown'.
+src/controllers/prayerRequests.controller.ts(2,10): error TS2305: Module '"../services/prayerRequest.service"' has no exported member 'PrayerRequestService'.
+src/controllers/prayerRequests.controller.ts(18,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/prayerRequests.controller.ts(34,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/prayerRequests.controller.ts(57,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/prayerRequests.controller.ts(74,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/sermons.controller.ts(2,10): error TS2305: Module '"../services/sermon.service"' has no exported member 'SermonService'.
+src/controllers/sermons.controller.ts(17,107): error TS18046: 'error' is of type 'unknown'.
+src/controllers/sermons.controller.ts(30,106): error TS18046: 'error' is of type 'unknown'.
+src/controllers/sermons.controller.ts(40,104): error TS18046: 'error' is of type 'unknown'.
+src/controllers/sermons.controller.ts(54,104): error TS18046: 'error' is of type 'unknown'.
+src/controllers/sermons.controller.ts(67,104): error TS18046: 'error' is of type 'unknown'.
+src/controllers/services.controller.ts(2,10): error TS2459: Module '"../services/service.service"' declares 'Service' locally, but it is not exported.
+src/controllers/services.controller.ts(3,10): error TS2305: Module '"../types/api"' has no exported member 'Service'.
+src/controllers/services.controller.ts(13,97): error TS18046: 'error' is of type 'unknown'.
+src/controllers/services.controller.ts(27,96): error TS18046: 'error' is of type 'unknown'.
+src/controllers/services.controller.ts(38,94): error TS18046: 'error' is of type 'unknown'.
+src/controllers/services.controller.ts(53,94): error TS18046: 'error' is of type 'unknown'.
+src/controllers/services.controller.ts(67,94): error TS18046: 'error' is of type 'unknown'.
+src/controllers/settings.controller.ts(2,10): error TS2614: Module '"../services/settings.service"' has no exported member 'SettingsService'. Did you mean to use 'import SettingsService from "../services/settings.service"' instead?
+src/controllers/settings.controller.ts(22,26): error TS18046: 'error' is of type 'unknown'.
+src/controllers/settings.controller.ts(39,26): error TS18046: 'error' is of type 'unknown'.
+src/middleware/auth.ts(12,58): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/middleware/auth.ts(12,63): error TS7006: Parameter 'decoded' implicitly has an 'any' type.
+src/middleware/auth.ts(17,13): error TS2339: Property 'user' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+src/prisma/index.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/prisma/seed.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/contact.repository.ts(1,24): error TS2307: Cannot find module '../prisma/schema.prisma' or its corresponding type declarations.
+src/repositories/contact.repository.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'ContactMessage'.
+src/repositories/dashboard.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/donation.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/donation.repository.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'Donation'.
+src/repositories/event.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/gallery.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/leader.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/liveStream.repository.ts(1,24): error TS2307: Cannot find module '../prisma/schema.prisma' or its corresponding type declarations.
+src/repositories/liveStream.repository.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'LiveStream'.
+src/repositories/ministry.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/prayerRequest.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/sermon.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/service.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/service.repository.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'Service'.
+src/repositories/settings.repository.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/repositories/settings.repository.ts(2,10): error TS2305: Module '"../types/prisma"' has no exported member 'Settings'.
+src/routes/liveStream.routes.ts(3,24): error TS2305: Module '"../middleware/auth"' has no exported member 'authorize'.
+src/routes/services.routes.ts(9,10): error TS2305: Module '"../validators/service.validator"' has no exported member 'validateService'.
+src/routes/services.routes.ts(10,24): error TS2305: Module '"../middleware/auth"' has no exported member 'authorize'.
+src/server.ts(28,9): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'CorsOptions' is not assignable to parameter of type 'PathParams'.
+src/services/admin.service.ts(1,10): error TS2305: Module '"../types/api"' has no exported member 'User'.
+src/services/auth.service.ts(4,24): error TS2724: '"../utils/password"' has no exported member named 'comparePassword'. Did you mean 'comparePasswords'?
+src/services/auth.service.ts(29,42): error TS2339: Property 'findUserById' does not exist on type 'AuthRepository'.
+src/services/contact.service.ts(1,10): error TS2305: Module '"../types/api"' has no exported member 'ContactMessage'.
+src/services/contact.service.ts(19,22): error TS18046: 'error' is of type 'unknown'.
+src/services/contact.service.ts(35,22): error TS18046: 'error' is of type 'unknown'.
+src/services/dashboard.service.ts(13,65): error TS2339: Property 'getTotalSermons' does not exist on type 'DashboardRepository'.
+src/services/dashboard.service.ts(14,64): error TS2339: Property 'getTotalEvents' does not exist on type 'DashboardRepository'.
+src/services/dashboard.service.ts(15,68): error TS2339: Property 'getTotalMinistries' does not exist on type 'DashboardRepository'.
+src/services/dashboard.service.ts(16,67): error TS2339: Property 'getTotalDonations' does not exist on type 'DashboardRepository'.
+src/services/dashboard.service.ts(17,72): error TS2339: Property 'getTotalPrayerRequests' does not exist on type 'DashboardRepository'.
+src/services/dashboard.service.ts(18,73): error TS2339: Property 'getTotalContactMessages' does not exist on type 'DashboardRepository'.
+src/services/donation.service.ts(1,10): error TS2459: Module '"../repositories/donation.repository"' declares 'Donation' locally, but it is not exported.
+src/services/donation.service.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'DonationData'.
+src/services/event.service.ts(12,43): error TS2339: Property 'findAll' does not exist on type 'EventRepository'.
+src/services/event.service.ts(16,43): error TS2339: Property 'findById' does not exist on type 'EventRepository'.
+src/services/event.service.ts(20,43): error TS2339: Property 'create' does not exist on type 'EventRepository'.
+src/services/event.service.ts(24,43): error TS2339: Property 'update' does not exist on type 'EventRepository'.
+src/services/event.service.ts(28,43): error TS2339: Property 'delete' does not exist on type 'EventRepository'.
+src/services/gallery.service.ts(12,45): error TS2339: Property 'findAll' does not exist on type 'GalleryRepository'.
+src/services/gallery.service.ts(16,45): error TS2339: Property 'findById' does not exist on type 'GalleryRepository'.
+src/services/gallery.service.ts(20,45): error TS2339: Property 'create' does not exist on type 'GalleryRepository'.
+src/services/gallery.service.ts(24,45): error TS2339: Property 'update' does not exist on type 'GalleryRepository'.
+src/services/gallery.service.ts(28,45): error TS2339: Property 'delete' does not exist on type 'GalleryRepository'.
+src/services/leader.service.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/liveStream.service.ts(1,10): error TS2459: Module '"../repositories/liveStream.repository"' declares 'LiveStream' locally, but it is not exported.
+src/services/liveStream.service.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'LiveStreamData'.
+src/services/ministry.service.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/ministry.service.ts(6,51): error TS2554: Expected 0 arguments, but got 1.
+src/services/ministry.service.ts(10,41): error TS2339: Property 'findAll' does not exist on type 'MinistryRepository'.
+src/services/ministry.service.ts(14,41): error TS2339: Property 'findById' does not exist on type 'MinistryRepository'.
+src/services/ministry.service.ts(18,41): error TS2339: Property 'create' does not exist on type 'MinistryRepository'.
+src/services/ministry.service.ts(22,41): error TS2339: Property 'update' does not exist on type 'MinistryRepository'.
+src/services/ministry.service.ts(26,34): error TS2339: Property 'delete' does not exist on type 'MinistryRepository'.
+src/services/prayerRequest.service.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/prayerRequest.service.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'PrayerRequest'.
+src/services/sermon.service.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/sermon.service.ts(3,10): error TS2305: Module '"../validators/sermon.validator"' has no exported member 'CreateSermonInput'.
+src/services/sermon.service.ts(3,29): error TS2305: Module '"../validators/sermon.validator"' has no exported member 'UpdateSermonInput'.
+src/services/service.service.ts(1,10): error TS2459: Module '"../repositories/service.repository"' declares 'Service' locally, but it is not exported.
+src/services/service.service.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'Service'.
+src/services/service.service.ts(3,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/settings.service.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/services/settings.service.ts(2,10): error TS2305: Module '"../types/api"' has no exported member 'Settings'.
+src/tests/auth.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/auth.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/auth.test.ts(3,10): error TS2614: Module '"../services/auth.service"' has no exported member 'createUser'. Did you mean to use 'import createUser from "../services/auth.service"' instead?
+src/tests/auth.test.ts(3,22): error TS2614: Module '"../services/auth.service"' has no exported member 'loginUser'. Did you mean to use 'import loginUser from "../services/auth.service"' instead?
+src/tests/authorization.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/authorization.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/authorization.test.ts(3,39): error TS2307: Cannot find module './utils' or its corresponding type declarations.
+src/tests/donations.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/donations.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/events.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/events.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/ministries.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/ministries.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/sermons.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/sermons.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/services.test.ts(1,21): error TS2307: Cannot find module 'supertest' or its corresponding type declarations.
+src/tests/services.test.ts(2,10): error TS2614: Module '"../app"' has no exported member 'app'. Did you mean to use 'import app from "../app"' instead?
+src/tests/services.test.ts(3,50): error TS2307: Cannot find module './testUtils' or its corresponding type declarations.
+src/types/prisma.ts(3,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/utils/jwt.ts(22,36): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/utils/jwt.ts(22,41): error TS7006: Parameter 'user' implicitly has an 'any' type.
+src/utils/jwt.ts(26,13): error TS2339: Property 'user' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
