@@ -1,0 +1,175 @@
+// This is the Prisma schema file for the EWCG Church Management application.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String   @id @default(uuid())
+  email          String   @unique
+  password       String
+  role           Role     @default(USER)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  donations      Donation[]
+  prayerRequests  PrayerRequest[]
+  contactMessages ContactMessage[]
+}
+
+model Role {
+  id   String @id @default(uuid())
+  name String @unique
+  users User[]
+}
+
+model Sermon {
+  id          String   @id @default(uuid())
+  title       String
+  speaker     String
+  description String
+  date        DateTime
+  bibleVerse  String
+  category    SermonCategory @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  thumbnail   String
+  videoUrl    String
+  audioUrl    String
+  pdfUrl      String
+  duration     Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SermonCategory {
+  id      String   @id @default(uuid())
+  name    String   @unique
+  sermons Sermon[]
+}
+
+model Event {
+  id             String   @id @default(uuid())
+  title          String
+  description    String
+  startDate      DateTime
+  endDate        DateTime
+  startTime      DateTime
+  endTime        DateTime
+  location       String
+  image          String
+  organizer      String
+  registrationStatus String
+  registrationLink String?
+  category       EventCategory @relation(fields: [categoryId], references: [id])
+  categoryId     String
+}
+
+model EventCategory {
+  id      String   @id @default(uuid())
+  name    String   @unique
+  events  Event[]
+}
+
+model Service {
+  id          String   @id @default(uuid())
+  name        String
+  day         String
+  time        String
+  location    String
+  description String
+  status      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Ministry {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  image       String
+  leader      String
+  meetingSchedule String
+  contactInfo String
+  activities  String
+  gallery     String
+}
+
+model Leader {
+  id          String   @id @default(uuid())
+  name        String
+  position    String
+  biography   String
+  socialLinks String
+}
+
+model Gallery {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  images      String[]
+}
+
+model Donation {
+  id             String   @id @default(uuid())
+  transactionId  String
+  amount         Float
+  currency       String
+  category       String
+  paymentProvider String
+  status         String
+  donorName      String?
+  donorEmail     String?
+  createdAt      DateTime @default(now())
+}
+
+model PrayerRequest {
+  id          String   @id @default(uuid())
+  name        String
+  email       String?
+  phone       String?
+  request     String
+  createdAt   DateTime @default(now())
+}
+
+model ContactMessage {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  phone       String?
+  subject     String
+  message     String
+  createdAt   DateTime @default(now())
+}
+
+model Announcement {
+  id          String   @id @default(uuid())
+  title       String
+  content     String
+  createdAt   DateTime @default(now())
+}
+
+model LiveStream {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  status      String
+  facebookUrl String
+  youtubeUrl  String
+}
+
+model ChurchSettings {
+  id          String   @id @default(uuid())
+  name        String
+  logo        String
+  heroContent String
+  welcomeMessage String
+  phone       String
+  email       String
+  address     String
+  serviceSchedules String
+  socialLinks String
+}

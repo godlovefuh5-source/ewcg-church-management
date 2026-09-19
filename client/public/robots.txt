@@ -1,0 +1,28 @@
+# EWCG Church Management System - Robots.txt
+# This file guides search engine crawlers
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /private/
+Disallow: *.json$
+Disallow: /_next
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Specific crawler rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay in seconds
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://ewcg-church.org/sitemap.xml

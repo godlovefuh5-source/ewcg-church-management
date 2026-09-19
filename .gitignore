@@ -1,0 +1,66 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+.vite/
+.next/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.env.local.*.js
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sqlite
+*.sqlite3
+postgres_data/
+
+# Uploads
+uploads/
+public/uploads/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Security - Never commit these
+**/*.key
+**/*.pem
+**/*.pfx
+**/*.p12
+
+# Source maps in production
+dist/**/*.map
+build/**/*.map
+
+# Secrets scanning
+.git-secrets
+.truffleHog

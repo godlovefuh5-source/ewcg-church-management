@@ -1,0 +1,55 @@
+{
+  "name": "ewcg-church-management",
+  "version": "1.0.0",
+  "description": "A full-stack Church Management and Ministry Web Application for Enlighten Word Christian Gathering Ministries.",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/cli": "^8.0.0-rc.15",
+    "@prisma/client": "^7.10.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.2.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^2.4.0",
+    "pg": "^8.7.1",
+    "prisma": "^3.0.0",
+    "typescript": "^4.3.2",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.0",
+    "nodemon": "^2.0.7",
+    "ts-jest": "^26.5.0"
+  },
+  "keywords": [
+    "church",
+    "management",
+    "ministry",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
